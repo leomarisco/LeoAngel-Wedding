@@ -4,13 +4,24 @@
 
 
   <meta charset="utf-8" />
-  <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <title>Page 1</title>
+  <title>Wedding Invitation - Leo & Angel</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A500"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A500"/>
   <link rel="stylesheet" href="./styles/page-1.css"/>
+  <style>
+   a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+   }
+   @media only screen and (min-width:576px) {
+      #opening, .page-2-ZFB{
+        max-width: calc(100% - 78%) !important;
+      }
+    }
+  </style>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -19,15 +30,12 @@
     <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
     
-    <img src="assets/opening.jpg" id="opening" style="position: absolute;left: 0;top: 0;width: 375px;height: 100vh;z-index: 1000;" />
+    <img src="assets/opening.jpg" id="opening" style="position: absolute;left: 50%;transform:translateX(-50%);top: 0;width: 100%;max-width: 90%;height: 100vh;z-index: 1000;" />
 
     
 
 <div class="page-1-4fP" hidden>
-    <div class="enabled-left-icon-1-EyB">
-    <img class="item-36-4DT" src="./assets/-1YH.png"/>
-    View map</a>
-  </div>
+    
   <div class="frame-3-StD">
     <div class="auto-group-fs1j-iqj">
       <div class="enabled-left-icon-3-cAR">
@@ -52,11 +60,11 @@
   </div>
 </div>
 
-<div class="page-2-ZFB" hidden style="position: absolute;left: 0;top: 0;width: 375px;height: 100vh;z-index: 1000;" >
+<div class="page-2-ZFB" hidden style="position: absolute;left: 50%;transform:translateX(-50%); top: 0;width: 100%;max-width: 90%;height: 100vh;z-index: 1000;" >
   <img src="./assets/artboard-5-1-bg.png" style="position: relative; width: 100%; height: 100%;"/>
-  <p id="p1"><div class="enabled-left-icon-4-9z5"><button onclick="copyText('8705310811')">Salin</button></div></p>
-  <p id="p2"><div class="enabled-left-icon-5-MqF"><button onclick="copyText('90020956809')">Salin</button></div></p>
-  <i class="bx bx-x bx-md" style="position: fixed;top: 4px;right: 4px;z-index: 1001;"> </i>
+  <p id="p1"><div class="enabled-left-icon-4-9z5"><button style="width: 100%;height: 100%;border: 0;background: transparent;font-weight: 600;" onclick="copyText('8705310811', this)">Salin</button></div></p>
+  <p id="p2"><div class="enabled-left-icon-5-MqF"><button style="width: 100%;height: 100%;border: 0;background: transparent;font-weight: 600;" onclick="copyText('90020956809', this)">Salin</button></div></p>
+  <i class="bx bx-x bx-lg" style="position: fixed;top: 8px;right: 4px;z-index: 1001;"> </i>
 </div>
 
 <script id="openingscript"> 
@@ -84,9 +92,14 @@
     page.removeAttribute('hidden');
   } )
 
-  function copyText(text) {
+  function copyText(text, element) {
           navigator.clipboard.writeText(text);
-          console.log(text);
+          // console.log(text);
+        element.innerText = 'Tersalin';
+        setTimeout(() => {
+          element.innerText = 'Salin';          
+        }, 1000);
       }
+
   </script>
 </body>
