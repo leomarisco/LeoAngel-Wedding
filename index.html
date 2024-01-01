@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Page 1</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A500"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A500"/>
+  <link rel="stylesheet" href="./styles/page-1.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <audio src="Bryan_Adams_I_Finally_Found_Someone.mp3" hidden controls>
+    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
+    
+    <img src="assets/opening.jpg" id="opening" style="position: absolute;left: 0;top: 0;width: 375px;height: 100vh;z-index: 1000;" />
+
+    
+
+<div class="page-1-4fP" hidden>
+    <div class="enabled-left-icon-1-EyB">
+    <img class="item-36-4DT" src="./assets/-1YH.png"/>
+    View map</a>
+  </div>
+  <div class="frame-3-StD">
+    <div class="auto-group-fs1j-iqj">
+      <div class="enabled-left-icon-3-cAR">
+        <img class="item-36-UTX" src="./assets/-Sp5.png"/>
+        <p class="view-map-Wv1"><a href="https://maps.app.goo.gl/WYx5iiPFtNeXVdVv5">View Map</a></p>
+      </div>
+    </div>
+    <div class="group-1-FWD">
+      <div class="enabled-left-icon-4-95o">
+        <img class="item-36-1do" src="./assets/.png"/>
+        <p class="view-map-KPb"><a href="https://maps.app.goo.gl/dXv2ujX3r9mTuWFk7">View Map</a></p>
+      </div>
+      <div class="enabled-left-icon-5-8M3">
+        <img class="item-36-oi5" src="./assets/-jem.png"/>
+        <p class="view-map-VL1"><a href="https://maps.app.goo.gl/ZpHBPFJVS1HAHQEF7">View Map</a></p>
+      </div>
+    </div>
+    <img class="artboard-3-1-53K" src="./assets/artboard-3-1.png"/>
+    <div class="auto-group-jvbo-xcu">
+      <div class="enabled-left-icon-4-EqK"><a href="javascript:void(0)" id="send-gift">Send Gift</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="page-2-ZFB" hidden style="position: absolute;left: 0;top: 0;width: 375px;height: 100vh;z-index: 1000;" >
+  <img src="./assets/artboard-5-1-bg.png" style="position: relative; width: 100%; height: 100%;"/>
+  <p id="p1"><div class="enabled-left-icon-4-9z5"><button onclick="copyText('8705310811')">Salin</button></div></p>
+  <p id="p2"><div class="enabled-left-icon-5-MqF"><button onclick="copyText('90020956809')">Salin</button></div></p>
+  <i class="bx bx-x bx-md" style="position: fixed;top: 4px;right: 4px;z-index: 1001;"> </i>
+</div>
+
+<script id="openingscript"> 
+  var img = document.getElementById('opening');
+  var imgscript = document.getElementById('openingscript');
+  var audio = document.querySelector('audio');
+  var page = document.querySelector('.page-1-4fP');
+  var page2 = document.querySelector('.page-2-ZFB');
+  var buttongift = document.getElementById('send-gift');
+  var closebutton = document.querySelector('.bx-x');
+
+  img.addEventListener('click', function() {
+    audio.play();
+    img.style.display = 'none';
+    page.removeAttribute('hidden');
+  } )
+
+  buttongift.addEventListener('click', function() {
+    page.setAttribute('hidden', '');
+    page2.removeAttribute('hidden');
+  } )
+
+  closebutton.addEventListener('click', function() {
+    page2.setAttribute('hidden', '');
+    page.removeAttribute('hidden');
+  } )
+
+  function copyText(text) {
+          navigator.clipboard.writeText(text);
+          console.log(text);
+      }
+  </script>
+</body>
