@@ -1,105 +1,233 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <title>Wedding Invitation - Leo & Angel</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A500"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A500"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/page-1.css"/>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
-   a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-   }
-   @media only screen and (min-width:576px) {
-      #opening, .page-2-ZFB{
-        max-width: calc(100% - 78%) !important;
-      }
+    [hidden] {
+      display: none !important;
+    }
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 500;
     }
   </style>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+<audio src="Bryan_Adams_I_Finally_Found_Someone.mp3" hidden controls loop="true">
+  <p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
 
-  <audio src="Bryan_Adams_I_Finally_Found_Someone.mp3" hidden controls>
-    <p>If you are reading this, it is because your browser does not support the audio element.</p>
-    </audio>
-    
-    <img src="assets/opening.jpg" id="opening" style="position: absolute;left: 50%;transform:translateX(-50%);top: 0;width: 100%;max-width: 90%;height: 100vh;z-index: 1000;" />
-
-    
-
-<div class="page-1-4fP" hidden>
-    
-  <div class="frame-3-StD">
-    <div class="auto-group-fs1j-iqj">
-      <div class="enabled-left-icon-3-cAR">
-        <img class="item-36-UTX" src="./assets/-Sp5.png"/>
-        <p class="view-map-Wv1"><a href="https://maps.app.goo.gl/WYx5iiPFtNeXVdVv5">View Map</a></p>
+<div id="opening" style="position: absolute;width: 100%;height: 100vh;z-index: 1000;display: flex;justify-content: center;align-items: center;">
+  <img src="assets/opening.jpg" id="opening-trigger" style="max-width: 100%;width: 37.6rem;height: fit-content;cursor: pointer;">
+  <div id="countdown" data-date="January 27, 2024 09:00:00">
+    <div class="countdown-title">
+      We will be together forever in:
+    </div>
+    <div class="countdown-wrap">
+      <div class="countdown-item">
+        <span class="countdown-time countdown-days">00</span>
+        <span class="countdown-text">Days</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-time countdown-hours">00</span>
+        <span class="countdown-text">Hours</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-time countdown-minutes">00</span>
+        <span class="countdown-text">Minutes</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-time countdown-seconds">00</span>
+        <span class="countdown-text">Seconds</span>
       </div>
     </div>
+  </div>
+  <div class="the-date">
+    January 27, 2024
+  </div>
+</div>
+
+<div class="page-1-4fP" hidden>
+  <div class="frame-3-StD">
+    <div class="auto-group-fs1j-iqj">
+      <a href="https://maps.app.goo.gl/WYx5iiPFtNeXVdVv5" class="enabled-left-icon-3-cAR">
+        <img class="item-36-UTX" src="./assets/-Sp5.png"/>
+        <span clas="view-map-Wv1" style="font-family: 'Inter', 'Source Sans 3', sans-serif;font-size: 11.5px;font-weight: 500;">View Map</span>
+      </a>
+    </div>
     <div class="group-1-FWD">
-      <div class="enabled-left-icon-4-95o">
-        <img class="item-36-1do" src="./assets/-jem.png"/>
-        <p class="view-map-KPb"><a href="https://maps.app.goo.gl/dXv2ujX3r9mTuWFk7">View Map</a></p>
-      </div>
-      <div class="enabled-left-icon-5-8M3">
-        <img class="item-36-oi5" src="./assets/-jem.png"/>
-        <p class="view-map-VL1"><a href="https://maps.app.goo.gl/ZpHBPFJVS1HAHQEF7">View Map</a></p>
-      </div>
+      <a href="https://maps.app.goo.gl/dXv2ujX3r9mTuWFk7" class="enabled-left-icon-4-95o">
+        <img class="item-36-1do" src="./assets/-Sp5.png"/>
+        <span clas="view-map-KPb" style="font-family: 'Inter', 'Source Sans 3', sans-serif;font-size: 10.5px;font-weight: 500;">View Map</span>
+      </a>
+      <a href="https://maps.app.goo.gl/ZpHBPFJVS1HAHQEF7" class="enabled-left-icon-5-8M3">
+        <img class="item-36-oi5" src="./assets/-Sp5.png"/>
+        <span clas="view-map-VL1" style="font-family: 'Inter', 'Source Sans 3', sans-serif;font-size: 10.5px;font-weight: 500;">View Map</span>
+      </a>
     </div>
     <img class="artboard-3-1-53K" src="./assets/artboard-3-1.png"/>
     <div class="auto-group-jvbo-xcu">
-      <div class="enabled-left-icon-4-EqK"><a href="javascript:void(0)" id="send-gift">Send Gift</a></div>
+      <a href="javascript:void(0)" id="send-gift" class="enabled-left-icon-4-EqK">Send Gift</a>
     </div>
   </div>
 </div>
 
-<div class="page-2-ZFB" hidden style="position: absolute;left: 50%;transform:translateX(-50%); top: 0;width: 100%;max-width: 90%;height: 100vh;z-index: 1000;" >
-  <img src="./assets/artboard-5-1-bg.png" style="position: relative; width: 100%; height: 100%;"/>
-  <p id="p1"><div class="enabled-left-icon-4-9z5"><button style="width: 100%;height: 100%;border: 0;background: transparent;font-weight: 600;" onclick="copyText('8705310811', this)">Salin</button></div></p>
-  <p id="p2"><div class="enabled-left-icon-5-MqF"><button style="width: 100%;height: 100%;border: 0;background: transparent;font-weight: 600;" onclick="copyText('90020956809', this)">Salin</button></div></p>
-  <i class="bx bx-x bx-lg" style="position: fixed;top: 8px;right: 4px;z-index: 1001;"> </i>
+<div class="page-2-ZFB" hidden style="position: absolute;width: 100%;height: 100vh;z-index: 1000;display: flex;justify-content: center;align-items: center;">
+  <div id="gift-wrap" style="position: relative;max-width: 100%;height: auto;">
+    <img src="./assets/artboard-5-1-bg.png" style="max-width: 100%;width: 37.6rem;height: fit-content;">
+    <div class="enabled-left-icon-4-9z5">
+      <button id="btn-account-1" style="width: 100%;height: 100%;border: 0;background: transparent;font-weight: 600;cursor: pointer;" onclick="copyText('BCA', 'Angelina Margareth S.', '8705310811', this)">Salin</button>
+    </div>
+    <div class="enabled-left-icon-5-MqF">
+      <button id="btn-account-2" style="width: 100%;height: 100%;border: 0;background: transparent;font-weight: 600;cursor: pointer;" onclick="copyText('BTPN', 'Leo Marisco', '90020956809', this)">Salin</button>
+    </div>
+    <i class="bx bx-x bx-lg" style="position: fixed;top: 8px;transform: translateX(-32px);z-index: 1001;cursor: pointer;"> </i>
+  </div>
 </div>
 
-<script id="openingscript"> 
+<div id="audio-toggle-wrap" style="position: absolute;width: 100%;z-index: 1001;display: flex;justify-content: center;align-items: center;pointer-events: none;">
+  <span id="audio-toggle" hidden class="bx bx-volume-full bx-md" style="z-index: 1000;cursor: pointer;pointer-events: all;position: fixed;bottom: 16px;transform: translateX(155px);padding: .75rem;border-radius: 50rem;aspect-ratio: 1/1;background: #e0a13c;color: #000000;box-shadow: 0 0.3646rem 0.2917rem rgba(0, 0, 0, 0.150000006);"></span>
+</div>
+
+
+<script id="openingscript">
   var img = document.getElementById('opening');
   var imgscript = document.getElementById('openingscript');
   var audio = document.querySelector('audio');
+  var audioToggle = document.getElementById('audio-toggle');
   var page = document.querySelector('.page-1-4fP');
   var page2 = document.querySelector('.page-2-ZFB');
+  var giftWrap = document.getElementById('gift-wrap');
   var buttongift = document.getElementById('send-gift');
   var closebutton = document.querySelector('.bx-x');
 
+  // Opening
   img.addEventListener('click', function() {
     audio.play();
     img.style.display = 'none';
     page.removeAttribute('hidden');
+    audioToggle.removeAttribute('hidden');
   } )
 
+  // Button Gift
   buttongift.addEventListener('click', function() {
     page.setAttribute('hidden', '');
     page2.removeAttribute('hidden');
+    audioToggle.setAttribute('hidden', '');
   } )
 
+  // Close Button Gift
   closebutton.addEventListener('click', function() {
     page2.setAttribute('hidden', '');
     page.removeAttribute('hidden');
+    audioToggle.removeAttribute('hidden');
   } )
 
-  function copyText(text, element) {
-          navigator.clipboard.writeText(text);
-          // console.log(text);
-        element.innerText = 'Tersalin';
-        setTimeout(() => {
-          element.innerText = 'Salin';          
-        }, 1000);
-      }
+  // Audio Toggle
+  audioToggle.addEventListener('click', function() {
+    if (audio.paused) {
+      audio.play();
+      audioToggle.classList.remove('bx-volume-mute');
+      audioToggle.classList.add('bx-volume-full');
+      audioToggle.style.background = '#e0a13c';
+      audioToggle.style.color = '#000000';
+    } else {
+      audio.pause();
+      audioToggle.classList.remove('bx-volume-full');
+      audioToggle.classList.add('bx-volume-mute');
+      audioToggle.style.background = '#000000';
+      audioToggle.style.color = '#ffffff';
+    }
+  } )
 
+  // Copy text
+  function copyText(bank, name, text, element) {
+      navigator.clipboard.writeText(text);
+      // console.log(text);
+      element.innerText = 'Tersalin';
+      element.parentElement.style.background = '#B98125';
+      const alert = '<div id="alert-copied" role="alert" style="position: absolute;font-size: 1.75rem;text-align: center;color: #ffffff;background: #e0a13c;left: 50%;top: 0;transform: translateX(-50%);padding: .5rem;border-radius: 50rem;width: 90%;z-index: 2000;box-shadow: 0 0.3646rem 0.2917rem rgba(0, 0, 0, 0.150000006);">' + bank + ' - ' + text + '<br>a/n ' + name + '<br>Berhasil disalin!</div>';
+      giftWrap.insertAdjacentHTML('afterbegin', alert);
+      setTimeout(() => {
+        element.innerText = 'Salin';
+        // Remove background style
+        element.parentElement.removeAttribute('style');
+        // Remove alert
+        document.getElementById('alert-copied').remove();
+      }, 1000);
+  }
+
+  // Countdown
+  document.querySelectorAll('#countdown').forEach(function (element) {
+      // Countdown script without plugin
+      var date = element.getAttribute('data-date');
+      var countDownDate = new Date(date).getTime();
+      var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // innerHTML with bootstrap classes for styling
+          document.querySelector('.countdown-days').innerHTML = days;
+          document.querySelector('.countdown-hours').innerHTML = hours;
+          document.querySelector('.countdown-minutes').innerHTML = minutes;
+          document.querySelector('.countdown-seconds').innerHTML = seconds;
+
+          // Show alert countdown the days before
+          // 4 days = 345600000 ms
+          // 3 days = 259200000 ms
+          // 2 days = 172800000 ms
+          // 1 day = 86400000 ms
+
+          // If the count down is less than 3 days
+          // if (distance < 259200000) {
+          //     document.querySelector('.alert-filter').classList.remove('d-none');
+          // }
+
+          // If the count down is finished
+          if (distance < 0) {
+              clearInterval(x);
+              // Hide Countdown Element
+              // element.style.display = 'none';
+
+              // Reset Countdown text
+              document.querySelector('.countdown-days').innerHTML = '00';
+              document.querySelector('.countdown-hours').innerHTML = '00';
+              document.querySelector('.countdown-minutes').innerHTML = '00';
+              document.querySelector('.countdown-seconds').innerHTML = '00';
+
+              // If the count down finished is more than 1 day
+              if (distance > -86400000) {
+                // Button gift
+                buttongift.innerText = 'Thanks a million for the lovely gift.';
+                buttongift.style.fontSize = '1.5rem';
+                buttongift.style.fontWeight = '600';
+                buttongift.style.pointerEvents = 'none';
+                buttongift.style.cursor = 'default';
+                buttongift.style.background = 'transparent';
+                buttongift.style.color = '#DA9A35';
+                buttongift.style.boxShadow = 'none';
+                buttongift.style.textDecoration = 'underline';
+                // Remove page2
+                page2.remove();
+              }
+          }
+      }, 1000);
+  });
   </script>
 </body>
+</html>
